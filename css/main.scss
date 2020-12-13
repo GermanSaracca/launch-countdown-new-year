@@ -38,7 +38,7 @@ body{
             }
             .title{
                 font-family: $font;
-                font-weight: 500;
+                font-weight: 700;
                 color: $White;
                 text-transform: uppercase;
                 letter-spacing: 2px;
@@ -73,7 +73,7 @@ body{
                         width: 74px;
                         background-color: $VeryDark2;
                         border-radius: 7px 7px 4px 4px;
-                        box-shadow: inset 0px 0px 3px 2px black;
+                        box-shadow: inset 0px 0px 3px 2px rgb(12, 12, 12);
                         overflow: hidden;
 
                         @media (min-width: $breakpoint-large-phones){
@@ -90,7 +90,7 @@ body{
                             height: 80px;
                             width: 160px;
                             font-size: 100px;
-                            box-shadow: inset 0px 0px 15px 2px black;
+                            box-shadow: inset 0px 0px 15px 2px rgb(12, 12, 12);
                         }
                         @media (min-width: $breakpoint-extra-large){
                             height: 100px;
@@ -129,7 +129,7 @@ body{
                         align-items: flex-start;
                         background-color: $VeryDark;
                         border-radius: 4px 4px 7px 7px;
-                        box-shadow: inset 0px 0px 3px 2px black;
+                        box-shadow: inset 0px 0px 3px 2px rgb(12, 12, 12);
                         transform-style: preserve-3d;
                         transition: all .09s ease;
 
@@ -147,7 +147,7 @@ body{
                             height: 80px;
                             width: 160px;
                             font-size: 100px;
-                            box-shadow: inset 0px 0px 15px 2px black;
+                            box-shadow: inset 0px 0px 15px 2px rgb(12, 12, 12);
                         }
                         @media (min-width: $breakpoint-extra-large){
                             height: 100px;
