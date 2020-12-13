@@ -1,0 +1,166 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient($VeryDark2 10%, $SoftRed 155% );
+
+    main {
+        height: 100vh;
+        
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            top: 20vh;
+            left: 5vw;
+            width: 90vw;
+            height: 80vh;
+            padding: 4vw 1vw;
+            z-index: 2;
+
+            .title{
+                font-family: $font;
+                font-weight: 500;
+                color: $White;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-align: center;
+                
+            }
+            .counter-container {
+                display: flex;
+                justify-content: space-around;
+
+                .card-container {
+
+                    .card-top {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        height: 10vw;
+                        width: 20vw;
+                        background-color: $VeryDark2;
+                        border-radius: 7px 7px 4px 4px;
+                        box-shadow: 0px 1px 0px 0px black;
+                        overflow: hidden;
+                        
+                        p{
+                            font-family: $font;
+                            font-weight: 600;
+                            font-size: 46px;
+                            color: $SoftRed;
+                            letter-spacing: 3px;
+                            opacity: 90%;
+                            transform: translateY(45%);
+                        }   
+                    }
+
+                    .card-bottom {
+                        @extend .card-top;
+                        align-items: flex-start;
+                        background-color: $VeryDark;
+                        border-radius: 4px 4px 7px 7px;
+                        box-shadow: 0px 2px 2px 0px black;
+                        transform-style: preserve-3d;
+                        transition: all .11s ease;
+    
+                        p{
+                            transform: translateY(-55%);
+                            opacity: 100%;
+                        }
+                    }
+                    .card-bottom-hide{
+                        @extend .card-top;
+                        align-items: flex-start;
+                        background-color: $VeryDark;
+                        border-radius: 4px 4px 7px 7px;
+                        transform: translateY(-10vw);
+                        position: absolute;
+                        z-index: -1;
+                        
+                    }
+                    
+                    .fliping {
+                        
+                        transform: translateY(-10vw) rotateX(180deg);
+                        box-shadow: unset;
+                    }
+                    p{
+                        @extend .title;
+                        font-weight: 400;
+                        font-size: 8px;
+                        opacity: 70%;
+                        padding-top: 4px;
+                    }
+
+                }
+            }
+            .socials {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                align-self: center;
+                width: 50vw;
+                height: 5vh;
+                transform: translateY(15vh);
+                a{
+                    padding: 3px 3px 0px 3px;
+                    background-color: $DarkRed;
+                    
+                    &:hover #facebook-icon, &:hover #instagram-icon, &:hover #pinterest-icon{
+                        fill: $SoftRed;
+                    }
+                }
+                #facebook-icon, #instagram-icon, #pinterest-icon{
+                    fill: $White;
+                }
+            }
+            .attribution{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                font-family: $font;
+                font-weight: 400;
+                font-size: 10px;
+                color: $White;
+    
+                a{
+                    text-decoration: none;
+                    color: $SoftRed;
+                }
+                
+            }
+        }
+
+
+
+        .bg-stars {
+            height: 100vh;
+            width: 100vw;
+            #stars {
+                fill: $White;
+            }
+        }
+
+        .pattern-hills{
+            width: 100vw;
+            height: 30vh;
+            position: absolute;
+            top: 70vh;
+            left: 0;
+            z-index: 1;
+            #hills {
+                fill: $DarkRed;
+            }
+        }  
+
+
+    }
+}
+
+
