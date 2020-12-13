@@ -2,7 +2,7 @@
 
 Realizado con HTML5, SASS y JS.
 
-Visita esta pagina en http://127.0.0.1:5500/launch-countdown-timer-main/index.html 
+Visita esta pagina en https://germansaracca.github.io/launch-countdown-new-year/
 
 
 
