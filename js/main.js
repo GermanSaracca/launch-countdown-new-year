@@ -1,6 +1,6 @@
 // VARIABLES PARA MEDIAQUERYS
 let mediaMobile = window.matchMedia("(max-width: 768px)");
-let mediaIpad = window.matchMedia("(min-width: 768px) and (max-width : 1024px)");
+let mediaIpad = window.matchMedia("(min-width: 769px) and (max-width : 1024px)");
 let mediaDesktop = window.matchMedia("(min-width: 1025px)");
 
 let stars = document.getElementsByClassName('bg-stars')[0];
