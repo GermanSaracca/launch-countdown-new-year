@@ -19,6 +19,7 @@ let cardBottomDays = document.getElementsByClassName('card-bottom')[0];
 let cardBottomHours = document.getElementsByClassName('card-bottom')[1];
 let cardBottomMinutes = document.getElementsByClassName('card-bottom')[2];
 let cardBottomSeconds = document.getElementsByClassName('card-bottom')[3];
+let title = document.getElementById('title');
 
 
 
@@ -81,10 +82,13 @@ function Counter() {
 
             if(t.total<=0){
 
+                cardBottomSeconds.classList.remove('fliping');
+
                 clearInterval(timeinterval);
                 let now = new Date();
-                console.log(now)
+
                 let yearStr = now.getFullYear().toString();
+                title.textContent = "Happy new year!!"
 
                 days.textContent = yearStr[0];
                 daysB.textContent = yearStr[0];
