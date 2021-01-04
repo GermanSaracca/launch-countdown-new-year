@@ -22,8 +22,6 @@ let cardBottomSeconds = document.getElementsByClassName('card-bottom')[3];
 let title = document.getElementById('title');
 
 
-
-console.log(new Date().getDate())
 //Event Listener
 document.addEventListener('DOMContentLoaded',Counter);
 
@@ -59,6 +57,11 @@ function Counter() {
         let timeinterval = setInterval(function(){
 
             let t = timeLeft(newyear);
+
+            t.days < 364 ? title.textContent = "far from New Year": title.textContent = title.textContent;
+            t.days < 210 ? title.textContent = "still far from new year": title.textContent = title.textContent;
+            t.days < 120 ? title.textContent = "getting close to new year": title.textContent = title.textContent;
+            t.days < 30 ? title.textContent = "Almost new year": title.textContent = title.textContent;
 
             let secondsVal = seconds.textContent;
             let minutesVal = minutes.textContent;
