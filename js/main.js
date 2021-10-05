@@ -3,9 +3,6 @@ let mediaMobile = window.matchMedia("(max-width: 768px)");
 let mediaIpad = window.matchMedia("(min-width: 769px) and (max-width : 1024px)");
 let mediaDesktop = window.matchMedia("(min-width: 1025px)");
 
-let stars = document.getElementsByClassName('bg-stars')[0];
-let hills = document.getElementsByClassName('pattern-hills')[0];
-
 let days = document.getElementsByClassName('days')[0];
 let daysB = document.getElementsByClassName('days')[1];
 let hours = document.getElementsByClassName('hours')[0];
@@ -123,9 +120,3 @@ function fliping(cardBottom,valueB,tValue,lastVal,nowVal){
         }); 
     };
 }
-
-//Para cambiar posicion y dimensiones del SVG de Hills en mobile
-if(mediaMobile.matches){
-    hills.setAttribute('viewBox',' 1150 0 290 100');
-    stars.setAttribute('viewBox',' 0 45 500 750');
-};
